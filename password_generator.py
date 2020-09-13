@@ -1,0 +1,30 @@
+print(f"Hello user!! Welcome to the password generator!!!\n")
+print("Firstly,you need to create a new username.")
+message0 =  input("\nSo enter your first name: ")
+mess0 = input("Enter your last name: ")
+username = (f"Your username: {message0}_{mess0}")
+print(username)
+import random
+password = []
+message2 = input("Enter your email address: ")
+message3 = input("Enter your mobile number: ")
+password.append(username.title())
+password.append(message2)
+password.append(message3)
+r = random.randint(1,10)
+s = random.randint(1,10)
+t = random.randint(1,10)
+u = random.randint(1,10)
+v = random.randint(1,10)
+w = random.randint(1,10)
+x = random.randint(1,10)
+y = random.randint(1,10)
+z = random.randint(1,10)
+a = random.randint(1,10)
+#print(password)
+
+def password_generation():
+    print(f"\nYour generated password: {message3[r]}{username[s]}"
+          f"{message2[t]}{username[u]}{username[v]}{message2[w]}{message3[x]}{message2[y]}{message2[z]}{message2[a]}")
+    print("Thanks for using!!")
+password_generation()
